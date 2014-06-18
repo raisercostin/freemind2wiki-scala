@@ -20,9 +20,7 @@ import java.io.FileReader
 import java.io.FileWriter
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
 import java.io.BufferedReader
-import java.io.IOException
 import java.io.Reader
 import java.io.Writer
 import java.util.ArrayList
@@ -30,7 +28,6 @@ import java.util.HashMap
 import java.util.LinkedList
 import java.util.List
 import java.util.Map
-import java.util.Map.Entry
 import java.util.regex.Pattern
 import org.dom4j.Document
 import org.dom4j.DocumentHelper
@@ -41,10 +38,8 @@ import Confluence2FMConverter._
 import scala.reflect.{ BeanProperty, BooleanBeanProperty }
 import scala.collection.JavaConversions._
 import org.slf4j.LoggerFactory
-
 import java.io.FileInputStream
 import java.io.FileOutputStream
-import java.io.InputStream
 import java.io.InputStreamReader
 import java.io.OutputStreamWriter
 import java.io.Reader
@@ -53,7 +48,7 @@ import java.nio.charset.Charset
 import java.util.Arrays
 import java.util.Properties
 import joptsimple.OptionParser
-import joptsimple.OptionSet
+import org.scalatest.junit.JUnitRunner
 
 object NodeIcon extends Enumeration {
   val ATTACH = new NodeIcon("Attach", "attach", null)
